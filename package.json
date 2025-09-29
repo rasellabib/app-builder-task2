@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node build-all.js"
+  },
+  "dependencies": {
+    "child_process": "^1.0.2",
+    "csv-parser": "^3.2.0",
+    "fs-extra": "^11.3.2"
+  }
+}
