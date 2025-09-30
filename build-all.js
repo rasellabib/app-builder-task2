@@ -47,7 +47,9 @@ ${appJsContent
 `;
     fs.writeFileSync(appJsPath, appJsContent);
 
-    // 4. React অ্যাপ বিল্ড
+    console.log(`Installing dependencies for ${site.domain}...`);
+    execSync("npm install", { cwd: appFolder, stdio: "inherit" });
+
     console.log(`Building ${site.domain}...`);
     execSync("npm run build", { cwd: appFolder, stdio: "inherit" });
   }
